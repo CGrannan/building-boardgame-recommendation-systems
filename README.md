@@ -1,15 +1,15 @@
 
-# Module 6 - Final Project Requirements
+# Final Project Requirements
 
 ## Introduction
 
-In this lesson, we'll discuss the requirements and expectations for the Module 6, our **Capstone Project**!
+In this lesson, we'll discuss the requirements and expectations for our **Capstone Project**!
 
 ## Objectives
 
 You will be able to:
 
-* Describe all required aspects of the final project for Module 6
+* Describe all required aspects of the final project 
 * Describe all required deliverables
 * Describe what constitutes a successful project
 * Describe what the experience of the project review should be like
@@ -17,7 +17,7 @@ You will be able to:
 
 ### Final Project Requirements
 
-Congratulations on making it to module 6! It's been a long journey, but we can finally see the light at the end of the tunnel!
+Congratulations on making it to the final project! It's been a long journey, but we can finally see the light at the end of the tunnel!
 
 <center><img src='end-of-tunnel.gif'>
 <strong><em>Actual Footage of you seeing the light at the end of the tunnel</strong></em>
