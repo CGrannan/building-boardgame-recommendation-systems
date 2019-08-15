@@ -63,7 +63,7 @@ Your project must meet the following technical requirements:
 
 The deliverable for this project will be two components:
 
-1. A Jupyter notebook for a presentation.  This will end up being the readme on your github. 
+1. A Jupyter notebook for a presentation.  This will end up being the README in your capstone project GitHub repository. 
   * The Jupyter notebook will have two components:
     1. An **_Abstract_** section that briefly explains your problem, your methodology, and your findings, and business recommendations as a result of your findings. This section should be 1-2 paragraphs long.  
     2. The technical analysis for a data science audience. This detailed technical analysis should explicitly follow a Data Science Process as outlined in the previous section. It should be well-formatted and organized, and should contain all code, visualizations, and detailed explanations/analysis.
@@ -94,6 +94,10 @@ Selecting the right topic and selecting a problem with the appropriate scope can
 ### Example Student Project
 
 To give you a frame of reference, take a look at this amazing [technical report](https://github.com/paulinaczheng/twitter_flu_tracking) from a previous student that used tweet data to predict the weekly number of flu cases during flu season. Pay attention to how well structured the project is, and how much she relies on great visualizations to tell her story for her. Your explanations don't have to be wordy--a visualization is worth a thousand words!
+
+## Rubric 
+
+Online students can find a PDF of the rubric for the final project [here](https://github.com/learn-co-curriculum/dsc-capstone-project-v2/blob/master/capstone_project_rubric.pdf). On-campus students should contact their instructor for more information.  
 
 # Summary
 
