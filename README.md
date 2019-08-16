@@ -80,11 +80,11 @@ For on-campus students, please talk to your instructor for a list of required pr
 Online students can find a PDF of the rubric for the final capstone project [here](https://github.com/learn-co-curriculum/dsc-capstone-project-v2/blob/master/capstone_project_rubric.pdf). On-campus students should contact their instructor for more information. 
 
 
-### Final Project Proposals (2 project ideas)
+## Final Project Proposals (2 project ideas)
 
 Selecting the right topic and selecting a problem with the appropriate scope can make or break a good project before you even begin. When starting, try to think up at least 2 different project ideas to explore that you can discuss with your instructor.  Consider the following questions when coming up with your project. 
 
-#### Project Ideation Questions
+### Project Ideation Questions
 
 1. What question/questions are you trying to solve?
   * What are the outcomes you think you will find (could use mutually exclusive collectively exhaustive for this)? Why do they matter?
