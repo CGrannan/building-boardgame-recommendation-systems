@@ -59,7 +59,7 @@ Your project must meet the following technical requirements:
 5. **_A well-defined question, with a well-defined answer._** Your project should clearly state the question you are trying to answer, and provide any background context needed to understand it. For instance, if you are trying to detect fault lines using Earthquake data, you should provide a brief primer on both the topic and your dataset so that the reader can better understand your topic and approach.  Similarly, the findings of your project should be clearly communicated. Do not just tell your audience the final accuracy of your models--be sure to answer "big picture" questions as well. For instance--why are these findings important or useful? Would you recommend shipping this model to production, or is more work needed? Who are these findings useful to, and why should they care?  **_NOTE:_** Inconclusive results are okay--from a purely scientific perspective, they are no more or less important or valuable than any other kinds of results. If your results are inconclusive, you should discuss what your next steps would be from there. For instance, what do you think it would take to get conclusive results--more data? Different data that was unavailable? Both? 
 
 
-### Deliverables
+## Deliverables
 
 For online students, the deliverables for this project consist of the following three components:
 
