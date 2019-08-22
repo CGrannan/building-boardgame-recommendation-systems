@@ -59,24 +59,32 @@ Your project must meet the following technical requirements:
 5. **_A well-defined question, with a well-defined answer._** Your project should clearly state the question you are trying to answer, and provide any background context needed to understand it. For instance, if you are trying to detect fault lines using Earthquake data, you should provide a brief primer on both the topic and your dataset so that the reader can better understand your topic and approach.  Similarly, the findings of your project should be clearly communicated. Do not just tell your audience the final accuracy of your models--be sure to answer "big picture" questions as well. For instance--why are these findings important or useful? Would you recommend shipping this model to production, or is more work needed? Who are these findings useful to, and why should they care?  **_NOTE:_** Inconclusive results are okay--from a purely scientific perspective, they are no more or less important or valuable than any other kinds of results. If your results are inconclusive, you should discuss what your next steps would be from there. For instance, what do you think it would take to get conclusive results--more data? Different data that was unavailable? Both? 
 
 
-### Deliverables
+## Deliverables
 
-The deliverable for this project will be two components:
+For online students, the deliverables for this project consist of the following three components:
 
-1. A Jupyter notebook for a presentation.  This will end up being the readme on your github. 
+1. A Jupyter notebook for a presentation.
   * The Jupyter notebook will have two components:
     1. An **_Abstract_** section that briefly explains your problem, your methodology, and your findings, and business recommendations as a result of your findings. This section should be 1-2 paragraphs long.  
     2. The technical analysis for a data science audience. This detailed technical analysis should explicitly follow a Data Science Process as outlined in the previous section. It should be well-formatted and organized, and should contain all code, visualizations, and detailed explanations/analysis.
-2. A blog post showcasing your project, with a focus on your methodology and findings. A well-written blog post about your project will probably be the first thing most recruiters and hiring managers see, so really take the time to polish up this blog post and explain your project, methodology, and findings/business recommendations in a clear, concise manner. This blog post should cover everything important about your project, but remember that your audience for this blog post will largely be non-technical. Your blog post should definitely contain visualizations, code snippets, and anything else you find important, but don't get bogged down trying to explain highly technical concepts. Your blog post should provide a link to the github repo containing your actual project, for people that want to really dive into the technical aspects of your project.
+    
+2. An organized **README.md** file in the GitHub repository containing your project code that describes the contents of the repository. This file should be the source of information for navigating through all the code in your repository. 
+    
+3. A blog post showcasing your project, with a focus on your methodology and findings. A well-written blog post about your project will probably be the first thing most recruiters and hiring managers see, so really take the time to polish up this blog post and explain your project, methodology, and findings/business recommendations in a clear, concise manner. This blog post should cover everything important about your project, but remember that your audience for this blog post will largely be non-technical. Your blog post should definitely contain visualizations, code snippets, and anything else you find important, but don't get bogged down trying to explain highly technical concepts. Your blog post should provide a link to the Github repository containing your actual project, for people that want to really dive into the technical aspects of your project.
+* Refer back to the [Blogging Guidelines](https://github.com/learn-co-curriculum/dsc-welcome-blogging) for the technical requirements and blog ideas.
 
-Refer back to the [Blogging Guidelines](https://github.com/learn-co-curriculum/dsc-welcome-blogging) for the technical requirements and blog ideas.
+Note: On-campus students may have different deliverables, please speak with your instructor.
+
+### Rubric 
+
+Online students can find a PDF of the rubric for the final capstone project [here](https://github.com/learn-co-curriculum/dsc-capstone-project-v2/blob/master/capstone_project_rubric.pdf). _Note: On-campus students may have different requirements, please speak with your instructor._
 
 
-### Final Project Proposals (2 project ideas)
+## Final Project Proposals (2 project ideas)
 
 Selecting the right topic and selecting a problem with the appropriate scope can make or break a good project before you even begin. When starting, try to think up at least 2 different project ideas to explore that you can discuss with your instructor.  Consider the following questions when coming up with your project. 
 
-#### Project Ideation Questions
+### Project Ideation Questions
 
 1. What question/questions are you trying to solve?
   * What are the outcomes you think you will find (could use mutually exclusive collectively exhaustive for this)? Why do they matter?
@@ -87,13 +95,14 @@ Selecting the right topic and selecting a problem with the appropriate scope can
 2. What are some data sources that would allow you to answer this?
   * What is the ideal data you would hope to gather to answer this question?  
   * Potentially missing data, that could cause omitted variable bias?
-4. Is this a classification task? A regression task? Both?
-5. What are the challenges or obstacles you foresee with this project?
-6. What are your next steps moving forward?
+3. Is this a classification task? A regression task? Both?
+4. What are the challenges or obstacles you foresee with this project?
+5. What are your next steps moving forward?
 
 ### Example Student Project
 
 To give you a frame of reference, take a look at this amazing [technical report](https://github.com/paulinaczheng/twitter_flu_tracking) from a previous student that used tweet data to predict the weekly number of flu cases during flu season. Pay attention to how well structured the project is, and how much she relies on great visualizations to tell her story for her. Your explanations don't have to be wordy--a visualization is worth a thousand words!
+ 
 
 # Summary
 
