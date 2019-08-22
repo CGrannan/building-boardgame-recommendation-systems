@@ -73,11 +73,11 @@ For online students, the deliverables for this project consist of the following 
 3. A blog post showcasing your project, with a focus on your methodology and findings. A well-written blog post about your project will probably be the first thing most recruiters and hiring managers see, so really take the time to polish up this blog post and explain your project, methodology, and findings/business recommendations in a clear, concise manner. This blog post should cover everything important about your project, but remember that your audience for this blog post will largely be non-technical. Your blog post should definitely contain visualizations, code snippets, and anything else you find important, but don't get bogged down trying to explain highly technical concepts. Your blog post should provide a link to the Github repository containing your actual project, for people that want to really dive into the technical aspects of your project.
 * Refer back to the [Blogging Guidelines](https://github.com/learn-co-curriculum/dsc-welcome-blogging) for the technical requirements and blog ideas.
 
-For on-campus students, please talk to your instructor for a list of required project deliverables. 
+Note: On-campus students may have different deliverables, please speak with your instructor.
 
 ### Rubric 
 
-Online students can find a PDF of the rubric for the final capstone project [here](https://github.com/learn-co-curriculum/dsc-capstone-project-v2/blob/master/capstone_project_rubric.pdf). On-campus students should contact their instructor for more information. 
+Online students can find a PDF of the rubric for the final capstone project [here](https://github.com/learn-co-curriculum/dsc-capstone-project-v2/blob/master/capstone_project_rubric.pdf). _Note: On-campus students may have different requirements, please speak with your instructor._
 
 
 ## Final Project Proposals (2 project ideas)
