@@ -19,14 +19,12 @@ You will be able to:
 
 Congratulations on making it to the final project! It's been a long journey, but we can finally see the light at the end of the tunnel!
 
-![Actual Footage of you seeing the light at the end of the tunnel](/end-of-tunnel.gif')
+![Actual Footage of you seeing the light at the end of the tunnel](/end-of-tunnel.gif)
 
 
 Now that you've learned everything we have to teach you, it's time to show off and flex your data science muscles with your own **_Capstone Project_**! This project will allow you to showcase everything you've learned as a data scientist to by completing a professional-level data science project of your choosing. This project will be significantly larger than any project you've completed so far, and will be the crown jewel of your portfolio. A strong capstone project is the single most important thing you can do to get the attention of potential employers, so be prepared to put as much effort into this project as possible--the results are **_worth it!_**
 
-<center><img src='https://raw.githubusercontent.com/learn-co-curriculum/dsc-capstone-project-v2/master/milkshake.gif'>
-<strong><em>Your <s>milkshake</s> portfolio brings all the <s>boys</s> employers to <s>the yard</s> your inbox! </strong></em>
-</center>
+![Your portfolio brings all the employers to your inbox](/milkshake.gif)
 
 Let's take a look at the project requirements.
 
