@@ -19,9 +19,8 @@ You will be able to:
 
 Congratulations on making it to the final project! It's been a long journey, but we can finally see the light at the end of the tunnel!
 
-<center><img src='https://raw.githubusercontent.com/learn-co-curriculum/dsc-capstone-project-v2/master/end-of-tunnel.gif'>
-<strong><em>Actual Footage of you seeing the light at the end of the tunnel</strong></em>
-</center>
+![Actual Footage of you seeing the light at the end of the tunnel](/end-of-tunnel.gif')
+
 
 Now that you've learned everything we have to teach you, it's time to show off and flex your data science muscles with your own **_Capstone Project_**! This project will allow you to showcase everything you've learned as a data scientist to by completing a professional-level data science project of your choosing. This project will be significantly larger than any project you've completed so far, and will be the crown jewel of your portfolio. A strong capstone project is the single most important thing you can do to get the attention of potential employers, so be prepared to put as much effort into this project as possible--the results are **_worth it!_**
 
@@ -77,7 +76,9 @@ Note: On-campus students may have different deliverables, please speak with your
 
 ### Rubric 
 
-Online students can find a PDF of the rubric for the final capstone project [here](https://github.com/learn-co-curriculum/dsc-capstone-project-v2/blob/master/capstone_project_rubric.pdf). _Note: On-campus students may have different requirements, please speak with your instructor._
+Online students can find a PDF of the rubric for the final capstone project [here](https://github.com/learn-co-curriculum/dsc-capstone-project-v2/blob/master/online_capstone_project_rubric.pdf). 
+
+On-campus students can find the rubric for the final capstone project [here](https://docs.google.com/spreadsheets/d/1YUC5_QVu8BEd7xBJumzspH40-KuJtL9KQInQYXGi5bE/edit?usp=sharing).
 
 
 ## Final Project Proposals (2 project ideas)
