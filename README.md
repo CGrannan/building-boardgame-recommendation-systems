@@ -77,11 +77,9 @@ For on-campus students, your project will be evaluated based on the contents of 
 
 The requirements for these components are described in detail in the rubric for the final capstone project [here](https://docs.google.com/spreadsheets/d/1YUC5_QVu8BEd7xBJumzspH40-KuJtL9KQInQYXGi5bE/edit?usp=sharing). You can learn how your teacher will use the rubric to review the project [here](https://github.com/learn-co-curriculum/dsc-campus-capstone-project-review).
 
-## Final Project Proposals (2 project ideas)
+## Capstone Project Ideation
 
-Selecting the right topic and selecting a problem with the appropriate scope can make or break a good project before you even begin. When starting, try to think up at least 2 different project ideas to explore that you can discuss with your instructor.  Consider the following questions when coming up with your project. 
-
-### Project Ideation Questions
+Selecting the right topic and selecting a problem with the appropriate scope can make or break a good project before you even begin. When starting, try to think up at least 2 different project ideas to explore that you can discuss with your instructor.  Consider the following questions when coming up with your project: 
 
 1. What question/questions are you trying to solve?
   * What are the outcomes you think you will find (could use mutually exclusive collectively exhaustive for this)? Why do they matter?
@@ -102,7 +100,6 @@ Selecting the right topic and selecting a problem with the appropriate scope can
 ## Example Student Project
 
 To give you a frame of reference, take a look at this amazing [technical report](https://github.com/paulinaczheng/twitter_flu_tracking) from a previous student that used tweet data to predict the weekly number of flu cases during flu season. Pay attention to how well structured the project is, and how much she relies on great visualizations to tell her story for her. Your explanations don't have to be wordy - a visualization is worth a thousand words!
- 
 
 ## Summary
 
