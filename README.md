@@ -1,19 +1,16 @@
 
-#  Final Project Requirements
+# Capstone Project Requirements
 
 ## Introduction
 
-In this lesson, we'll discuss the requirements and expectations for our **Capstone Project**!
+In this lesson, we'll discuss the requirements for our **Capstone Project**!
 
 ## Objectives
 
 You will be able to:
 
 * Describe all required aspects of the final project
-* Describe all required deliverables
 * Describe what constitutes a successful project
-* Describe what the experience of the project review should be like
-
 
 ## Introduction
 
@@ -21,35 +18,34 @@ Congratulations on making it to the final project! It's been a long journey, but
 
 ![Actual Footage of you seeing the light at the end of the tunnel](/end-of-tunnel.gif)
 
-Now that you've learned everything we have to teach you, it's time to show off and flex your data science muscles with your own **_Capstone Project_**! This project will allow you to showcase everything you've learned as a data scientist to by completing a professional-level data science project of your choosing. This project will be significantly larger than any project you've completed so far, and will be the crown jewel of your portfolio. A strong capstone project is the single most important thing you can do to get the attention of potential employers, so be prepared to put as much effort into this project as possible--the results are **_worth it!_**
+Now that you've learned everything we have to teach you, it's time to show off and flex your data science muscles with your own **_Capstone Project_**! This project will allow you to showcase everything you've learned as a data scientist to by completing a professional-level data science project of your choosing. This project will be significantly larger than any project you've completed so far, and will be the crown jewel of your portfolio. A strong capstone project is the single most important thing you can do to get the attention of potential employers, so be prepared to put as much effort into this project as possible - the results will be **_worth it!_**
 
 ![Your portfolio brings all the employers to your inbox](/milkshake.gif)
 
 ## Topic Requirements
-Your project should answer one or more questions related to a single topic. You are completely free to choose any project topic that interests you. Your project should have clear answers to these questions:  
+
+Your project should answer one or more questions related to a single topic. You are completely free to choose any project topic that interests you, but keep in mind that you will need to source your own data - you will complete this project end-to-end. When choosing a topic, think through these questions:  
 
 * What are the possible outcomes you think you will find? 
 * How could a company or individual make use of your findings to benefit them?  What about your findings are _actionable_?
-
-The project scope must be end-to-end, from data sourcing and cleaning all the way through tuning and analysis of your trained model(s). Make sure to plan in advance for feasibility of the question in the time allowed - consider the following questions when selecting your project topic:
-
-* What version this question would allow me to find an answer in a feasible amount of time?
-* What version of this question would allow me/motivate me to work on this problem even after completing Flatiron School?
+* What will I be able to answer in a feasible amount of time?
+* What would I be able and motivated to continue working on even after completing Flatiron School?
 
 ## Technical Requirements
 
 Your project must meet the following technical requirements:
 
-1. **_No Off-The-Shelf Datasets_**. This project is a chance for you to highlight your critical thinking and data gathering skills by finding the perfect dataset to answer your question. If a pre-existing dataset exists that you'd like to use, it is okay to use it in your project. However, you should consider combining it with other existing sources of data, modifying the dataset through feature engineering. The goal here is to showcase your ability to find and work with data, so just grabbing Boston Housing Dataset or the MNIST dataset is out of the question. 
+1. **_No Off-The-Shelf Datasets_**. This project is a chance for you to highlight your critical thinking and data sourcing skills by finding a good dataset to answer a useful question. You _can_ use a pre-existing dataset, but you should consider combining it with other datasets and/or engineering your own features. The goal is to showcase your ability to find and work with data, so just grabbing a squeaky-clean dataset is out of the question.
 
-2. **_Strong Data Exploration, with at least 4 relevant data visualizations._**  Think of this project as a way for your to showcase your best possible work in every area that matters. There are few skills that impress employers more than the ability to dive into a new dataset and produce engaging visualizations that communicate important information. For this project, anything worth knowing is worth visualizing. Consider all that you have learned, and don't be afraid to dig into more advanced visualization libraries like seaborn to see what you make! You should make use of visualizations whenever possible during this project, not just during the Data Exploration phase--for instance, consider visualizing your confusion matrices rather than just printing them out as text!
+2. **_Strong Data Exploration, with at least 4 relevant data visualizations._**  There are few skills that impress employers more than the ability to dive into a new dataset and produce engaging visualizations that communicate important information. For this project, anything worth knowing is worth visualizing. Level up your project by digging into more advanced visualization libraries like seaborn!
 
-3. **_Makes use of Supervised Learning_**. This requirement dovetails with having a well-defined question, because you'll make use of supervised learning to find the answer! It is both acceptable and encouraged to make use of **_Unsupervised Learning_** techniques as needed in your project (for instance, segmentation with clustering algorithms), but the supervised learning should play a central role in answering your question. 
+3. **_Makes use of Supervised Learning_**. It is great to use **_Unsupervised Learning_** techniques as needed in your project (for instance, segmentation with clustering algorithms), but supervised learning should play a central role in answering your question. 
 
-4. **_Explicitly makes use of a Data Science Process such as OSEMN or CRISP-DM_**. This part is fairly straightforward--you should select a Data Science Process to use and then use this to give structure to your project. Each section should be clearly delineated in your Jupyter Notebook.  
+4. **_Explicitly makes use of a Data Science Process such as OSEMN or CRISP-DM_**. Select a Data Science Process to use to give structure to your project. Each step in the process should correspond to a section in your Jupyter Notebook.  
 
-5. **_A well-defined question, with a well-defined answer._** Your project should clearly state the question you are trying to answer, and provide any background context needed to understand it. For instance, if you are trying to detect fault lines using Earthquake data, you should provide a brief primer on both the topic and your dataset so that the reader can better understand your topic and approach.  Similarly, the findings of your project should be clearly communicated. Do not just tell your audience the final accuracy of your models--be sure to answer "big picture" questions as well. For instance--why are these findings important or useful? Would you recommend shipping this model to production, or is more work needed? Who are these findings useful to, and why should they care?  **_NOTE:_** Inconclusive results are okay--from a purely scientific perspective, they are no more or less important or valuable than any other kinds of results. If your results are inconclusive, you should discuss what your next steps would be from there. For instance, what do you think it would take to get conclusive results--more data? Different data that was unavailable? Both? 
+5. **_A well-defined question, with a well-defined answer._** Your project should provide any background context needed to understand the question(s) you're trying to answer and why it's important. For instance, if you are trying to detect fault lines using Earthquake data, you should review the topic and your dataset so that the reader can understand your work.  Similarly, the findings of your project should be clearly communicated. Do not just tell your audience the final accuracy of your models--be sure to answer "big picture" questions as well. For instance: Would you recommend shipping this model to production, or is more work needed? 
 
+**_NOTE:_** Inconclusive results are okay--from a purely scientific perspective, they are no more or less important or valuable than any other kinds of results. If your results are inconclusive, you should discuss what your next steps would be from there. For instance, what do you think it would take to get conclusive results--more data? Different data that was unavailable? Both? 
 
 ## Requirements for Online Students Only
 
@@ -73,12 +69,10 @@ Online students can find a PDF of the rubric for the final capstone project [her
 
 ## Requirements for On-Campus Students Only
 
-### Deliverables
-
 For on-campus students, your project will be evaluated based on the contents of your GitHub repo, which must contain the following three components:
 
 1. A Jupyter notebook     
-2. An organized **README.md** file 
+2. An **README.md** file 
 3. Presentation slides
 
 The requirements for these components are described in detail in the rubric for the final capstone project [here](https://docs.google.com/spreadsheets/d/1YUC5_QVu8BEd7xBJumzspH40-KuJtL9KQInQYXGi5bE/edit?usp=sharing). You can learn how your teacher will use the rubric to review the project [here](https://github.com/learn-co-curriculum/dsc-campus-capstone-project-review).
