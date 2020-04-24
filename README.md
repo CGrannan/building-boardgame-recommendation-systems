@@ -1,4 +1,3 @@
-
 # Capstone Project Requirements
 
 ## Introduction
@@ -24,12 +23,13 @@ Now that you've learned everything we have to teach you, it's time to show off a
 
 ## Topic Requirements
 
-Your project should answer one or more questions related to a single topic. You are completely free to choose any project topic that interests you, but keep in mind that you will need to source your own data - you will complete this project end-to-end. When choosing a topic, think through these questions:  
+Your project should develop a data product or analysis related to a single topic. You are completely free to choose any topic that interests you, but keep in mind that you will need to complete this project end-to-end, including sourcing your own data. When choosing a topic, think through these questions:  
 
-* What are the possible outcomes you think you will find? 
-* How could a company or individual make use of your findings to benefit them?  What about your findings are _actionable_?
-* What will I be able to answer in a feasible amount of time?
-* What would I be able and motivated to continue working on even after completing Flatiron School?
+* What would I be motivated to work on?
+* What data could I use?
+* How could an individual or organization use my product or findings?
+* What will I be able to accomplish in the time I have available?
+* What challenges do I foresee with this project?
 
 ## Technical Requirements
 
@@ -77,32 +77,12 @@ For on-campus students, your project will be evaluated based on the contents of 
 
 The requirements for these components are described in detail in the rubric for the final capstone project [here](https://docs.google.com/spreadsheets/d/1YUC5_QVu8BEd7xBJumzspH40-KuJtL9KQInQYXGi5bE/edit?usp=sharing). You can learn how your teacher will use the rubric to review the project [here](https://github.com/learn-co-curriculum/dsc-campus-capstone-project-review).
 
-## Capstone Project Ideation
-
-Selecting the right topic and selecting a problem with the appropriate scope can make or break a good project before you even begin. When starting, try to think up at least 2 different project ideas to explore that you can discuss with your instructor.  Consider the following questions when coming up with your project: 
-
-1. What question/questions are you trying to solve?
-  * What are the outcomes you think you will find (could use mutually exclusive collectively exhaustive for this)? Why do they matter?
-  * How would a person or business take action upon learning the results of your project? How will your findings be _useful_?
-  * What version this question would allow me to find an answer in 2-3 days?
-  * What version of this question would allow me/motivate me to work on this problem even after completing Flatiron School?
-
-2. What are some data sources that would allow you to answer this?
-  * What is the ideal data you would hope to gather to answer this question?  
-  * Potentially missing data, that could cause omitted variable bias?
-  
-3. Is this a classification task? A regression task? Both?
-
-4. What are the challenges or obstacles you foresee with this project?
-
-5. What are your next steps moving forward?
-
 ## Example Student Project
 
-To give you a frame of reference, take a look at this amazing [technical report](https://github.com/paulinaczheng/twitter_flu_tracking) from a previous student that used tweet data to predict the weekly number of flu cases during flu season. Pay attention to how well structured the project is, and how much she relies on great visualizations to tell her story for her. Your explanations don't have to be wordy - a visualization is worth a thousand words!
+Take a look at this [technical report](https://github.com/paulinaczheng/twitter_flu_tracking) from a Flatiron student that used tweet data to predict the weekly number of flu cases during flu season. Pay attention to how well structured the project is, and how much she relies on great visualizations to tell her story for her. Your explanations don't have to be wordy - a visualization is worth a thousand words!
 
 ## Summary
 
 The Capstone Project is the most critical part of the program. It gives you a chance to bring together all the skills you've learned into realistic projects and to practice key "business judgement" and communication skills.  Most importantly, it provides employers with strong signal about your technical abilities, and allow you to show the world what an amazing Data Scientist you've become!
 
-The projects are serious and important - they can be passed and they can be failed. Take the project seriously, put the time in, ask for help from your peers or instructors early and often if you need it, and treat the review as a job interview and you'll do great. We're rooting for you to succeed and we're only going to ask you to take a review again if we believe that you need to. We'll also provide open and honest feedback so you can improve as quickly and efficiently as possible
+The projects are serious and important - they can be passed and they can be failed. Take the project seriously, put the time in, ask for help from your peers or instructors early and often if you need it, and treat the review as a job interview and you'll do great. We're rooting for you to succeed and we're only going to ask you to take a review again if we believe that you need to. We'll also provide open and honest feedback so you can improve as quickly and efficiently as possible.
