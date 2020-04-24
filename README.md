@@ -65,7 +65,7 @@ For online students, the deliverables for this project consist of the following 
 
 ### Rubric 
 
-Online students can find a PDF of the rubric for the final capstone project [here](https://github.com/learn-co-curriculum/dsc-capstone-project-v2/blob/master/online_capstone_project_rubric.pdf). 
+Online students can find a PDF of the rubric for the final capstone project [here](/online_capstone_project_rubric.pdf). 
 
 ## Requirements for On-Campus Students Only
 
