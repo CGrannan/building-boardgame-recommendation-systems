@@ -21,3 +21,12 @@ def extract_multiple_features(item, feature):
     if len(lst) == 0:
         lst = 'N/A'
     return lst
+
+def print_csv(games, i):
+    games_df = pd.DataFrame.from_dict(games, orient='index', columns=['name', 'type', 'year', 'designer', 
+                                                                      'artist', 'publisher', 'min_players', 
+                                                                      'max_players', 'play_time', 'min_age', 
+                                                                      'num_ratings', 'avg_rating', 'bayes_avg',
+                                                                      'weight', 'categories', 'mechanics',
+                                                                      'families'])
+    games_df.to_csv(f'scraped_stats/games_to_{i}')
