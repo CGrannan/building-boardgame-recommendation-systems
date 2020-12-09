@@ -40,3 +40,41 @@ def create_wordcloud(text):
     plt.imshow(wordcloud, interpolation='bilinear')
     plt.axis("off")
     plt.show()
+
+def get_recommendations(names, df, cos_sim_1, cos_sim_2, n):
+    '''
+    Prompts user to input the name of a game, and prints recommendations from two models.
+    
+    names - Array of boardgame names.
+    df - Dataframe of statistics, used to gather names for recommendations.
+    cosine_sim_1 - matrix of cosine similarities from first model
+    cosine_sim_2 - matrix of cosine similarities from second model
+    n - number of recommendations to be returned.
+    
+    Returns:
+    Prints two sets of recommendations.
+    '''
+    cont = True
+    while cont == True:
+        try:
+            name = input('Enter game for recommendations: ')
+            recs_1 = recommend(name, names, df, cos_sim_1, n)
+            print('\n')
+            print('Recommendations from count vectorizer model:')
+            for rec in recs_1:
+                print(rec)
+            recs_2 = recommend(name, names, df, cos_sim_2, n)
+            print('\n')
+            print('Recommendations from tf-idf vectorizer model:')
+            for rec in recs_2:
+                print(rec)
+            y_n = input('Get more recommendations? y/n ').lower()
+            if y_n == 'n':
+                cont = False
+            elif y_n == 'y':
+                cont = True
+            else:
+                input('Sorry, please enter y or n: ')
+        except:
+            print("Sorry, I didn't recognize that name")
+    print('Thank you!')
