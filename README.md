@@ -1,88 +1,67 @@
-# Capstone Project Requirements
+# Building Boardgame Recommendation Systems
 
-## Introduction
+### Abstract
 
-In this lesson, we'll discuss the requirements for our **Capstone Project**!
+For this project I am looking to improve the shopping experience when buying boardgames online. There is an extremely large number of boardgames that have been produced in the last 20 years, and it is difficult to find games that you might like among all of the noise. Furthermore, many of these games are relatively expensive and buying a boardgame that you don't like is a really unpleasant experience. Because of these issues, it is often safer from a customer standpoint to only buy a few games that you have played before. To increase sales, online retailers of boardgames can make use of recommendation systems to suggest games to customers similar to games they have played before, or rated similarly by other customers. I intend to build several types of recommendation systems and evaluate how effective they will be for future sales.
 
-## Objectives
+The dataset for this project consists of statistics for 119,978 boardgames and ~3.7 million reviews (~2000 reviews each for the 2000 games with the highest number of reviews) for the 2000 most popular games (defined by the most reviewed games). All of the data as obtained through the [boardgamegeek website](https://boardgamegeek.com/) directly using their api or using a handy python [wrapper](https://github.com/lcosmin/boardgamegeek). You can see how the data was obtained by looking through the scrapers folder.
 
-You will be able to:
+Over the course of this project I will go over several types of recommendation systems and ultimately develop a NLP content-based recommendation system, a KNN collaboratively-filtered recommendation system, and a pyspark ALS recommendation system. It is highly recommended that an online retailer for boardgames makes use of at least one of these systems to connect customers with targeted games for sale.
 
-* Describe all required aspects of the final project
-* Describe what constitutes a successful project
+### Data Distributions
 
-## Introduction
+The data was eventually cut down to just the information for the 2000 most popular games as I did not have the working memory to process the entire dataset. Here is a visualization of the distribution of games by number of ratings:
 
-Congratulations on making it to the final project! It's been a long journey, but we can finally see the light at the end of the tunnel!
+![binned_games_by_rating](images/binned_games_by_rating.png)
 
-![Actual Footage of you seeing the light at the end of the tunnel](https://raw.githubusercontent.com/learn-co-curriculum/dsc-capstone-project-v2/master/end-of-tunnel.gif)
+I actually have a fairly normal distribution here with most games having between 600 and 1000 reviews. Here is the average rating for each game:
 
-Now that you've learned everything we have to teach you, it's time to show off and flex your data science muscles with your own **_Capstone Project_**! This project will allow you to showcase everything you've learned as a data scientist to by completing a professional-level data science project of your choosing. This project will be significantly larger than any project you've completed so far, and will be the crown jewel of your portfolio. A strong capstone project is the single most important thing you can do to get the attention of potential employers, so be prepared to put as much effort into this project as possible - the results will be **_worth it!_**
+![average_rating_by_game](images/average_rating_by_game.png)
 
-![Your portfolio brings all the employers to your inbox](https://raw.githubusercontent.com/learn-co-curriculum/dsc-capstone-project-v2/master/milkshake.gif)
+We can see that the average rating fluctuates between 6 and 10. Taking a look at this information from the other side, here is a visualization of the distribution of users by number of ratings:
 
-## Topic Requirements
+![binned_users_by_rating](images/binned_users_by_rating.png)
 
-Your project should develop a data product or analysis related to a single topic. You are completely free to choose any topic that interests you, but keep in mind that you will need to complete this project end-to-end, including sourcing your own data. When choosing a topic, think through these questions:  
+Most users have fewer than 100 reviews, but ther are some with as many as 1200. We should also take a look at the average ratings for each reviewer as well:
 
-* What would I be motivated to work on?
-* What data could I use?
-* How could an individual or organization use my product or findings?
-* What will I be able to accomplish in the time I have available?
-* What challenges do I foresee with this project?
+![average_rating_by_user](images/average_rating_by_user.png)
 
-## Technical Requirements
+### Content-Based Recommendation Systems
 
-Your project must meet the following technical requirements:
+This section will cover the NLP_content_based_recommendation.ipynb file. In this file, I built several content-based recommendation systems using some basic NLP techniques. I combined several columns of my descriptive statistics data together to create a bag of words for each of the 2000 games. To create a baseline model, I used a count vectorizer to transform each bag of words into a matrix and computed the similarities. I then followed the same steps using a tf-idf vectorizer instead. The recommendations from the tf-idf model were more unique to each game, so I deemed that to be the better model. To try and refine the models further I removed several columns from each bag of words and reran the models. There were no major effects on the output. Here is a wordcloud to show what the most repeated words were amongst all games:
 
-1. **_No Off-The-Shelf Datasets_**. This project is a chance for you to highlight your critical thinking and data sourcing skills by finding a good dataset to answer a useful question. You _can_ use a pre-existing dataset, but you should consider combining it with other datasets and/or engineering your own features. The goal is to showcase your ability to find and work with data, so just grabbing a squeaky-clean dataset is out of the question.
+![all_games_wordcloud](images/all_games_wordcloud.png)
 
-2. **_Strong Data Exploration, with at least 4 relevant data visualizations._**  There are few skills that impress employers more than the ability to dive into a new dataset and produce engaging visualizations that communicate important information. For this project, anything worth knowing is worth visualizing. Level up your project by digging into more advanced visualization libraries like seaborn!
+### Collaborative-Filtering Recommendation Systems
 
-3. **_Makes use of Supervised Learning_**. It is great to use **_Unsupervised Learning_** techniques as needed in your project (for instance, segmentation with clustering algorithms), but supervised learning should play a central role in answering your question. 
+In the collaborative_filtering_recommendation_system.ipynb notebook, I create two simple recommendation systems using collaborative-filtering. The first is a NearestNeighbors model which produced good recommendations, though there was no good way to test for error. Next, I created a model using singular value decomposition to decompose the rating matrix. This model also produced good recommendations. With a good deal of overlap between the recommendations of both models and no way of testing for error, these models would need to be tested in the field to determine a better model. I personally liked the KNN model, though the difference was pretty marginal.
 
-4. **_Explicitly makes use of a Data Science Process such as OSEMN or CRISP-DM_**. Select a Data Science Process to use to give structure to your project. Each step in the process should correspond to a section in your Jupyter Notebook.  
+In the final notebook for this project, spark_als_recommendation.ipynb, I built a recommendation system using ALS in pyspark. For this model I used RMSE for an evaluation metric. My baseline model had an error rating of 1.01, and after tuning parameters I was able to bring it down to 9.85.
 
-5. **_A well-defined goal with clearly presented results._** Your project should provide any background context needed to understand the project you are working on and why it's important. For instance, if you are trying to detect fault lines using Earthquake data, you should review the topic and your dataset so that the reader can understand your work.  Similarly, the results of your project should be clearly communicated. Do not just tell your audience the final accuracy of your models--be sure to answer "big picture" questions as well. For instance: Would you recommend shipping this model to production, or is more work needed? 
+### Conclusion
 
-**_NOTE:_** Inconclusive results are okay--from a purely scientific perspective, they are no more or less important or valuable than any other kinds of results. If your results are inconclusive, you should discuss what your next steps would be from there. For instance, what do you think it would take to get conclusive results--more data? Different data that was unavailable? Both? 
+We have explored many different kinds of recommendation systems over the course of this project. First, we looked at using natural language processing to identify similar games based on the content of each game. We used two models for this approach a count vectorized model and a tf-idf vectorized model. We determined that the tf-idf model was stronger overall. Next we looked at two collaborative-filtering models. When given a game, these models will return several other games that are rated similarly by users who liked that game. The two collaborative-filtering models were more difficult to separate in regards to quality. Of the two, I prefer the KNN model, but both had good recommendations. And finally, we took a look at pyspark als to create new users and get recommendations based on user activity, and not on individual items.
 
-## Requirements for Online Students Only
+While all models were deemed to be pretty effective, they all do slightly different things. I have three recommendations for the implementation of these models. First, I suggest using the tf-idf NLP model as a scrolling banner when selling boardgames. This will allow customers to see games that are similar to the game that they are currently considering purchasing. Second, I would suggest using the nearest neighbor model as a second banner indicating games that other customers liked. This will allow customers to see games that might be a bit different than what they are used to playing, but are thought very highly of by like minded people.  Finally, I suggest implementing the ALS model as a separate component of a business's webpage. By having a page where customers can rate their collections, we can offer them more personalized recommendations. Ultimately all of these models should help customers navigate the overwhelming number of boardgames for purchase and find games that they will enjoy.
 
-### Deliverables
+### Future Work
 
-For online students, the deliverables for this project consist of the following three components:
+There are several way that this project can be enhanced. The first and most obvious way is to gather more data. By filling in the rather sparse matrix with more reviews I will be able to finely tune the models and provide better recommendations. Second, I can test the knn and svd collaborative-filtering models. By gathering user feedback on the recommendations provided by those models, I can better evaluate the recommendations and tune the parameters. And finally I can further adjust the content-based system by further adjusting the tokens used for NLP. If I more closely monitor which tokens I am using, I might be able to create recommendations that are not mostly expansions and reprints.
 
-1. A Jupyter notebook for a presentation.
-  * The Jupyter notebook will have two components:
-    1. An **_Abstract_** section that briefly explains your problem, your methodology, and your findings, and business recommendations as a result of your findings. This section should be 1-2 paragraphs long.  
-    2. The technical analysis for a data science audience. This detailed technical analysis should explicitly follow a Data Science Process as outlined in the previous section. It should be well-formatted and organized, and should contain all code, visualizations, and detailed explanations/analysis.
-    
-2. An organized **README.md** file in the GitHub repository containing your project code that describes the contents of the repository. This file should be the source of information for navigating through all the code in your repository. 
-    
-3. A blog post showcasing your project, with a focus on your methodology and findings. A well-written blog post about your project will probably be the first thing most recruiters and hiring managers see, so really take the time to polish up this blog post and explain your project, methodology, and findings/business recommendations in a clear, concise manner. This blog post should cover everything important about your project, but remember that your audience for this blog post will largely be non-technical. Your blog post should definitely contain visualizations, code snippets, and anything else you find important, but don't get bogged down trying to explain highly technical concepts. Your blog post should provide a link to the Github repository containing your actual project, for people that want to really dive into the technical aspects of your project.
-* Refer back to the [Blogging Guidelines](https://github.com/learn-co-curriculum/dsc-welcome-blogging) for the technical requirements and blog ideas.
+### Files
 
-### Rubric 
+Here is a summary of the organization of this repository:
 
-Online students can find a PDF of the rubric for the final capstone project [here](https://github.com/learn-co-curriculum/dsc-capstone-project-v2/blob/master/online_capstone_project_rubric.pdf).
+data - Folder containing three zipped folders that hold all datasets used in this project. If the scrapers and preliminary_cleaning.ipynb are run, these files will be recreated.
 
-## Requirements for On-Campus Students Only
+images - Folder containing several graphs plotted over the course of the project.
 
-For on-campus students, your project will be evaluated based on the contents of your GitHub repo, which must contain the following three components:
+py_scripts - Folder containing scripts that have helper functions for various notebooks written in them.
 
-1. A Jupyter notebook     
-2. An **README.md** file 
-3. Presentation slides
+scrapers - Contains the data aquisition process for this project. First run statistics_scraper. This will produce several csv files that preliminary_cleaning.ipynb will convert into dataframes. These dataframes are then used by rating_scraper and description_scraper to scrape the rest of the data.
 
-The requirements for these components are described in detail in the rubric for the final capstone project [here](https://docs.google.com/spreadsheets/d/1YUC5_QVu8BEd7xBJumzspH40-KuJtL9KQInQYXGi5bE/edit?usp=sharing). You can learn how your teacher will use the rubric to review the project [here](https://github.com/learn-co-curriculum/dsc-campus-capstone-project-review).
+NLP_content_based_recommendation.ipynb - Notebook in which I create content-based recommendation systems.
 
-## Example Student Project
+collaborative_filtering_recommendation_system.ipynb - Notebook in which I create simple collaborative-filtering recommendation systems.
 
-Take a look at this [technical report](https://github.com/paulinaczheng/twitter_flu_tracking) from a Flatiron student that used tweet data to predict the weekly number of flu cases during flu season. Pay attention to how well structured the project is, and how much she relies on great visualizations to tell her story for her. Your explanations don't have to be wordy - a visualization is worth a thousand words!
-
-## Summary
-
-The Capstone Project is the most critical part of the program. It gives you a chance to bring together all the skills you've learned into realistic projects and to practice key "business judgement" and communication skills.  Most importantly, it provides employers with strong signal about your technical abilities, and allow you to show the world what an amazing Data Scientist you've become!
-
-The projects are serious and important - they can be passed and they can be failed. Take the project seriously, put the time in, ask for help from your peers or instructors early and often if you need it, and treat the review as a job interview and you'll do great. We're rooting for you to succeed and we're only going to ask you to take a review again if we believe that you need to. We'll also provide open and honest feedback so you can improve as quickly and efficiently as possible.
+spark_als_recommendation.ipynb - Notebook in which I create a recommendation system using pyspark.
